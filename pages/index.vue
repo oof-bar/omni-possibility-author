@@ -1,27 +1,26 @@
 <template>
-  <div class="phrase">
-    <p>
-      <span class="phrase__word phrase__word--prefix">{{ prefix }}</span>
-      <span class="phrase__separator">-</span>
-      <span class="phrase__word phrase__word--descriptor">{{ descriptor }}</span>
-      <span class="phrase__separator">&MediumSpace;</span>
-      <span class="phrase__word phrase__word--noun">{{ noun }}</span>
-    </p>
-    <button @click="$store.commit('phrase/randomize')">Generate</button>
+  <div class="index">
+    <page-header />
+    <phrase-generator />
+    <page-footer />
   </div>
 </template>
 
 <script>
-  import { mapState } from 'vuex';
+  import PhraseGenerator from '~~/components/phrase-generator.vue';
+
+  import PageHeader from '~~/partials/page-header.vue';
+  import PageFooter from '~~/partials/page-footer.vue';
 
   export default {
-    computed: mapState('phrase', ['prefix', 'descriptor', 'noun']),
+    components: {
+      PageHeader,
+      PageFooter,
+      PhraseGenerator
+    },
     fetch: ({ store }) => {
       // Ensure there is a phrase ready on render:
       store.commit('phrase/randomize');
     }
   }
 </script>
-
-<style>
-</style>

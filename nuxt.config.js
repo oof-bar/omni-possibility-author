@@ -15,5 +15,9 @@ module.exports = {
         content: 'Meta description'
       }
     ]
-  }
+  },
+  css: [
+    '~~/assets/scss/app.scss'
+  ],
+  plugins: []
 }
