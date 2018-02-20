@@ -1,7 +1,8 @@
 {
   "name": "omni-possibility-author",
   "scripts": {
-    "dev": "nuxt"
+    "dev": "nuxt",
+    "generate": "nuxt generate"
   },
   "dependencies": {
     "nuxt": "^1.3.0"
