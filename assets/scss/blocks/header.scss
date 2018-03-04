@@ -1,1 +1,11 @@
-.header {}
+.header {
+  max-width: $page__width;
+  padding: $page__gutters;
+  margin: 0 auto;
+
+  @include screen--large {
+    text-align: center;
+  }
+
+  &__icon {}
+}

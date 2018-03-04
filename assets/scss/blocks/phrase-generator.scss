@@ -1,5 +1,25 @@
 .phrase-generator {
+  margin: 10vh 0;
+
+  @include screen--large {
+    text-align: center;
+  }
+
+  &__title {
+    font-family: $type__family--serif;
+    font-size: $type__size--medium;
+
+    @include screen--large {
+      font-size: $type__size--large;
+    }
+  }
+
+  &__lead-in {
+    display: block;
+  }
+
   &__word {
+
     &--prefix {}
     &--descriptor {}
     &--noun {}
@@ -15,5 +35,13 @@
     appearance: none;
     background-color: black;
     color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-size: $type__size--small;
+    padding: 0.5rem 1.5rem;
+
+    @include screen--medium {
+      padding: 1rem 2rem;
+    }
   }
 }

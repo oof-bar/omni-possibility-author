@@ -14,6 +14,9 @@ module.exports = {
         name: 'description',
         content: 'Meta description'
       }
+    ],
+    link: [
+      { rel: 'stylesheet', href: 'https://use.typekit.net/lgs5jab.css' }
     ]
   },
   css: [

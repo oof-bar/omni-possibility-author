@@ -1,7 +1,9 @@
 <template>
   <div class="index">
     <page-header />
-    <phrase-generator />
+    <main class="content">
+      <phrase-generator />
+    </main>
     <page-footer />
   </div>
 </template>

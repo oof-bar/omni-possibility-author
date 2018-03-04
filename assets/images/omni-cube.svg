@@ -1,0 +1,11 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="63" height="63" viewBox="0 0 63 63">
+  <title>omni-cube</title>
+  <g>
+    <rect x="1.0008" y="16.9976" width="44.984" height="44.984" style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2px"/>
+    <rect x="16.9976" y="1.0008" width="44.984" height="44.984" style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2px"/>
+    <line x1="16.9976" y1="45.9848" x2="1.0008" y2="61.9816" style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2px"/>
+    <line x1="16.9976" y1="1.0008" x2="1.0008" y2="16.9976" style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2px"/>
+    <line x1="61.9816" y1="45.9848" x2="45.9848" y2="61.9816" style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2px"/>
+    <line x1="61.9816" y1="1.0008" x2="45.9848" y2="16.9976" style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2px"/>
+  </g>
+</svg>

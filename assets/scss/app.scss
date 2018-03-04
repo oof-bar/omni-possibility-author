@@ -1,5 +1,10 @@
 @import 'include/variables';
 
+@import 'include/mixins';
+
+@import 'blocks/content';
+@import 'blocks/document';
 @import 'blocks/footer';
 @import 'blocks/header';
 @import 'blocks/phrase-generator';
+@import 'blocks/scrambled-text';
