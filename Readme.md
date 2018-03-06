@@ -2,7 +2,7 @@
 
 A tool for serial pivoters, brought to you by [oof.](https://oof.studio/) and [The Pressure](http://thepressure.org/).
 
-Discover your new title at [omnipossibilityauthor.com](https://omnipossibilityauthor.com/)—your feature awaits!
+Discover your new title at [omnipossibilityauthor.com](https://omnipossibilityauthor.com/)—your future awaits!
 
 ## Contributing
 
