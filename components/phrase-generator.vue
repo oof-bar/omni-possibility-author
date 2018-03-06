@@ -20,7 +20,12 @@
   export default {
     computed: {
       indefiniteArticle () {
-        return this.$store.state.phrase.prefix.search(/^[aeiou]/i) == 0 ? 'an' : 'a';
+        const prefix = this.$store.state.phrase.prefix
+        if (prefix) {
+          return prefix.search(/^[aeiou]/i) == 0 ? 'an' : 'a';
+        } else {
+          return 'an';
+        }
       },
       ...mapState('phrase', ['prefix', 'descriptor', 'noun'])
     },
