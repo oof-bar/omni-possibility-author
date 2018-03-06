@@ -20,9 +20,11 @@
       PageFooter,
       PhraseGenerator
     },
-    fetch: ({ store }) => {
-      // Ensure there is a phrase ready on render:
-      store.commit('phrase/randomize');
+    fetch: ({ store }) => {},
+    async mounted () {
+      // Commit another phrase once we hit the browser:
+      // console.log(this);
+      this.$store.commit('phrase/randomize');
     }
   }
 </script>
