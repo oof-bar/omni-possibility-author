@@ -14,6 +14,7 @@ module.exports = {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { property: 'og:url', content: siteUrl },
+      { property: 'og:type', content: 'website' },
       { property: 'og:title', content: siteName },
       { property: 'og:description', content: siteDescription },
       { property: 'og:image', content: siteImage },
