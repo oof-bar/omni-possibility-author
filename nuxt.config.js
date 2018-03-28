@@ -2,11 +2,13 @@ const siteName = 'Omni-Possibility Author';
 const siteDescription = 'I am Omni-Possibility Author, your companion in an instantaneous lateral promotion. What will you do next?';
 const siteUrl = process.env.URL || 'http://localhost:3000';
 const siteImage = `${siteUrl}/images/preview-image.png`;
+const gaId = 'UA-71908679-2';
 
 module.exports = {
   env: {
     // Netlify will populate this during a deploy:
-    baseUrl: siteUrl
+    baseUrl: siteUrl,
+    gaId: gaId
   },
   head: {
     titleTemplate: siteName,
@@ -30,10 +32,15 @@ module.exports = {
     ],
     link: [
       { rel: 'stylesheet', href: 'https://use.typekit.net/lgs5jab.css' }
-    ]
+    ],
+    script: [
+      { src: `https://www.googletagmanager.com/gtag/js?id=${gaId}`, async: true }
+    ],
   },
   css: [
     '~~/assets/scss/app.scss'
   ],
-  plugins: []
+  plugins: [
+    { src: '~~/plugins/ga.js', ssr: false }
+  ]
 }

@@ -34,6 +34,9 @@
       },
       ...mapState('phrase', ['prefix', 'descriptor', 'noun'])
     },
+    updated: function () {
+      this.$ga.track('send', 'event', 'Phrase', 'Generate', this.phraseAsText);
+    },
     components: {
       TextScrambler,
       TweetButton

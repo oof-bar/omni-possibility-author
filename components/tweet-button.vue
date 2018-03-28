@@ -1,5 +1,5 @@
 <template>
-  <a class="tweet-button" :href="shareUrl" target="_blank">Tweet</a>
+  <a class="tweet-button" :href="shareUrl" target="_blank" @click="trackShare">Tweet</a>
 </template>
 
 <script>
@@ -8,6 +8,11 @@
     data: function () {
       return {
         siteUrl: process.env.baseUrl
+      }
+    },
+    methods: {
+      trackShare () {
+        this.$ga.track('send', 'event', 'Phrase', 'Share', this.shareText);
       }
     },
     computed: {
