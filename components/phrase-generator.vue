@@ -6,9 +6,10 @@
       <span class="phrase-generator__separator">-</span>
       <span class="phrase-generator__word phrase-generator__word--descriptor"><text-scrambler :text="descriptor" /></span>
       <span class="phrase-generator__separator">&MediumSpace;</span>
-      <span class="phrase-generator__word phrase__word--noun"><text-scrambler :text="noun" /></span>
+      <span class="phrase-generator__word phrase-generator__word--noun"><text-scrambler :text="noun" /></span>
     </p>
-    <button class="phrase-generator__randomize" @click="$store.commit('phrase/randomize')">Generate</button>
+    <button class="phrase-generator__randomize" @click="$store.commit('phrase/randomize')">Disrupt</button>
+    <tweet-button :message="phraseAsText" />
   </div>
 </template>
 
@@ -16,9 +17,13 @@
   import { mapState } from 'vuex';
 
   import TextScrambler from '~~/components/text-scrambler.vue';
+  import TweetButton from '~~/components/tweet-button.vue';
 
   export default {
     computed: {
+      phraseAsText () {
+        return `I’m ${this.indefiniteArticle} ${this.prefix} ${this.descriptor} ${this.noun}`;
+      },
       indefiniteArticle () {
         const prefix = this.$store.state.phrase.prefix
         if (prefix) {
@@ -30,7 +35,8 @@
       ...mapState('phrase', ['prefix', 'descriptor', 'noun'])
     },
     components: {
-      TextScrambler
+      TextScrambler,
+      TweetButton
     }
   }
 </script>

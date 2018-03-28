@@ -1,8 +1,7 @@
 .footer {
   max-width: $page__width;
-  padding: 0 $page__gutters;
+  padding: $page__gutters;
   font-size: $type__size--small;
-  margin: 0 auto;
 
   @include screen--medium {
     text-align: center;

@@ -1,5 +1,8 @@
 .content {
   max-width: $page__width;
-  padding: 0 $page__gutters;
-  margin: 0 auto;
+  padding: ($page__gutters * 2) $page__gutters;
+
+  @include screen--medium {
+    padding: $page__gutters;
+  }
 }

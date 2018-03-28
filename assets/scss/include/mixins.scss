@@ -20,3 +20,33 @@
 @mixin screen--wide {
   @include screen-size(1400px) { @content }
 }
+
+// UI
+
+@mixin button {
+  display: inline-block;
+  font: inherit;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  appearance: none;
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: $type__size--small;
+  padding: 0.5rem 1.25rem;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+  line-height: inherit;
+
+  @include screen--large {
+    padding: 0.75rem 1.5rem;
+  }
+
+  &:hover {
+    box-shadow: 4px 4px 0 rgba(black, 0.1);
+  }
+}

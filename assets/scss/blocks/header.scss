@@ -1,9 +1,8 @@
 .header {
   max-width: $page__width;
   padding: $page__gutters;
-  margin: 0 auto;
 
-  @include screen--large {
+  @include screen--medium {
     text-align: center;
   }
 

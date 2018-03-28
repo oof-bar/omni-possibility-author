@@ -7,7 +7,7 @@
     </div>
     <div class="footer__credits">
       <div class="text-content">
-        <p>Brought to you by <a href="http://thepressure.org" target="_blank">The Pressure</a> and <a href="https://oof.studio" target="_blank">oof.</a></p>
+        <p>Brought to you by <a href="http://thepressure.org" target="_blank">The Pressure</a> and <a href="https://oof.studio" target="_blank">oof.</a> You can <a href="https://github.com/oof-bar/omni-possibility-author" target="_blank">view the source</a> or <a href="https://github.com/oof-bar/omni-possibility-author/issues" target="_blank">submit a cool word</a> on GitHub.</p>
       </div>
     </div>
   </footer>
