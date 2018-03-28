@@ -1,6 +1,6 @@
-import prefixes from '~~/static/prefixes.json'
-import descriptors from '~~/static/descriptors.json'
-import nouns from '~~/static/nouns.json'
+import prefixes from '~~/static/db/prefixes.json'
+import descriptors from '~~/static/db/descriptors.json'
+import nouns from '~~/static/db/nouns.json'
 
 export const state = () => ({
   prefix: null,

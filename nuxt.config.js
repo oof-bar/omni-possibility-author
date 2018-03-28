@@ -15,10 +15,10 @@ module.exports = {
       { name: 'twitter:card', content: 'summary' },
       { name: 'twitter:title', content: siteName },
       { name: 'twitter:description', content: siteDescription },
-      { name: 'twitter:image', content: '/assets/images/preview-image.png' },
+      { name: 'twitter:image', content: '/images/preview-image.png' },
       { name: 'og:title', content: siteName },
       { name: 'og:description', content: siteDescription },
-      { name: 'og:image', content: '/assets/images/preview-image.png' },
+      { name: 'og:image', content: '/images/preview-image.png' },
       {
         hid: 'description',
         name: 'description',
