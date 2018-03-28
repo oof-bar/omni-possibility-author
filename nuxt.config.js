@@ -18,9 +18,10 @@ module.exports = {
       { name: 'twitter:title', content: siteName },
       { name: 'twitter:description', content: siteDescription },
       { name: 'twitter:image', content: siteImage },
-      { name: 'og:title', content: siteName },
-      { name: 'og:description', content: siteDescription },
-      { name: 'og:image', content: siteImage },
+      { property: 'og:url', content: siteUrl },
+      { property: 'og:title', content: siteName },
+      { property: 'og:description', content: siteDescription },
+      { property: 'og:image', content: siteImage },
       {
         hid: 'description',
         name: 'description',
