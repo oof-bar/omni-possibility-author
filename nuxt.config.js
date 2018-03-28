@@ -1,10 +1,12 @@
 const siteName = 'Omni-Possibility Author';
 const siteDescription = 'I am Omni-Possibility Author, your companion in an instantaneous lateral promotion. What will you do next?';
+const siteUrl = process.env.URL || 'http://localhost:3000';
+const siteImage = `${siteUrl}/images/preview-image.png`;
 
 module.exports = {
   env: {
     // Netlify will populate this during a deploy:
-    baseUrl: process.env.URL || 'http://localhost:3000'
+    baseUrl: siteUrl
   },
   head: {
     titleTemplate: siteName,
@@ -15,10 +17,10 @@ module.exports = {
       { name: 'twitter:card', content: 'summary' },
       { name: 'twitter:title', content: siteName },
       { name: 'twitter:description', content: siteDescription },
-      { name: 'twitter:image', content: '/images/preview-image.png' },
+      { name: 'twitter:image', content: siteImage },
       { name: 'og:title', content: siteName },
       { name: 'og:description', content: siteDescription },
-      { name: 'og:image', content: '/images/preview-image.png' },
+      { name: 'og:image', content: siteImage },
       {
         hid: 'description',
         name: 'description',
