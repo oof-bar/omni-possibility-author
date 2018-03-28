@@ -4,7 +4,7 @@ const siteDescription = 'I am Omni-Possibility Author, your companion in an inst
 module.exports = {
   env: {
     // Netlify will populate this during a deploy:
-    baseUrl: process.env.DEPLOY_URL || 'http://localhost:3000'
+    baseUrl: process.env.URL || 'http://localhost:3000'
   },
   head: {
     titleTemplate: siteName,
